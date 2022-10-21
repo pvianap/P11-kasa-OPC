@@ -1,19 +1,17 @@
 import './App.css';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Lodging from './pages/Lodging';
-import NotFound from './pages/NotFound';
+// import Router from './utils/Router';
+import { Fragment } from 'react';
+import React, { Suspense } from 'react';
+
+const Routing = React.lazy(() => import('./utils/Router'));
 
 function App() {
   return (
-    <Routes>
-      <Route exact path="/" element={<Navigate replace to="/home" />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/apropos" element={<About />} />
-      <Route path="/logements/:id" element={<Lodging />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <Fragment>
+      <Suspense fallback={<h1>Loading...</h1>}>
+        <Routing />
+      </Suspense>
+    </Fragment>
   );
 }
 
