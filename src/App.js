@@ -2,6 +2,7 @@ import './App.css';
 // import Router from './utils/Router';
 import { Fragment } from 'react';
 import React, { Suspense } from 'react';
+import './styles/styles.scss';
 
 const Routing = React.lazy(() => import('./utils/Router'));
 
