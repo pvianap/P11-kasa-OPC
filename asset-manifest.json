@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/P11-kasa-OPC/static/css/main.04a035a6.css",
-    "main.js": "/P11-kasa-OPC/static/js/main.5a315c4a.js",
-    "static/js/132.c9f673ec.chunk.js": "/P11-kasa-OPC/static/js/132.c9f673ec.chunk.js",
+    "main.js": "/P11-kasa-OPC/static/js/main.2cd726ef.js",
+    "static/js/132.8db27b7e.chunk.js": "/P11-kasa-OPC/static/js/132.8db27b7e.chunk.js",
     "index.html": "/P11-kasa-OPC/index.html",
     "main.04a035a6.css.map": "/P11-kasa-OPC/static/css/main.04a035a6.css.map",
-    "main.5a315c4a.js.map": "/P11-kasa-OPC/static/js/main.5a315c4a.js.map",
-    "132.c9f673ec.chunk.js.map": "/P11-kasa-OPC/static/js/132.c9f673ec.chunk.js.map"
+    "main.2cd726ef.js.map": "/P11-kasa-OPC/static/js/main.2cd726ef.js.map",
+    "132.8db27b7e.chunk.js.map": "/P11-kasa-OPC/static/js/132.8db27b7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04a035a6.css",
-    "static/js/main.5a315c4a.js"
+    "static/js/main.2cd726ef.js"
   ]
 }
