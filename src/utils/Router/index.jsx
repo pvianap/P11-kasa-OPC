@@ -10,7 +10,7 @@ export default function Router() {
       <Route
         exact
         path="/P11-kasa-OPC/"
-        element={<Navigate replace to="/home" />}
+        element={<Navigate replace to="/P11-kasa-OPC/home" />}
       />
       <Route path="/P11-kasa-OPC/home" element={<Home />} />
       <Route path="/P11-kasa-OPC/apropos" element={<About />} />
