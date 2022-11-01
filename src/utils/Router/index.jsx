@@ -7,10 +7,14 @@ import NotFound from '../../pages/NotFound';
 export default function Router() {
   return (
     <Routes>
-      <Route exact path="/" element={<Navigate replace to="/home" />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/apropos" element={<About />} />
-      <Route path="/logements/:id" element={<Lodging />} />
+      <Route
+        exact
+        path="/P11-kasa-OPC/"
+        element={<Navigate replace to="/home" />}
+      />
+      <Route path="/P11-kasa-OPC/home" element={<Home />} />
+      <Route path="/P11-kasa-OPC/apropos" element={<About />} />
+      <Route path="/P11-kasa-OPC/logements/:id" element={<Lodging />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
