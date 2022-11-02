@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Fragment>
       <Navbar />
-      <p>Home page </p>
+      <p>Home page! </p>
       {data.map((e) => {
         return <Card key={e.id} data={e}></Card>;
       })}

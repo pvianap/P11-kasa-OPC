@@ -7,6 +7,7 @@ import NotFound from '../../pages/NotFound';
 export default function Router() {
   return (
     <Routes>
+      {/* Route adaptation for github pages */}
       <Route
         exact
         path="/P11-kasa-OPC/"

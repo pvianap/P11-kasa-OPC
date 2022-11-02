@@ -1,0 +1,16 @@
+.navbar {
+  background-color: beige;
+
+  &__list {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-self: flex-end;
+    a {
+      text-decoration: none;
+    }
+    li {
+      margin: 5px;
+    }
+  }
+}
