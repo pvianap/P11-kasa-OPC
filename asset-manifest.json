@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/P11-kasa-OPC/static/css/main.04a035a6.css",
-    "main.js": "/P11-kasa-OPC/static/js/main.bda8ec6b.js",
-    "static/js/132.8d325aa5.chunk.js": "/P11-kasa-OPC/static/js/132.8d325aa5.chunk.js",
+    "main.css": "/P11-kasa-OPC/static/css/main.3f901a68.css",
+    "main.js": "/P11-kasa-OPC/static/js/main.dc184568.js",
+    "static/css/596.d853399f.chunk.css": "/P11-kasa-OPC/static/css/596.d853399f.chunk.css",
+    "static/js/596.cfd65025.chunk.js": "/P11-kasa-OPC/static/js/596.cfd65025.chunk.js",
+    "static/media/logo.svg": "/P11-kasa-OPC/static/media/logo.bb1c78bdbf97911cf6044e13e0c4f670.svg",
     "index.html": "/P11-kasa-OPC/index.html",
-    "main.04a035a6.css.map": "/P11-kasa-OPC/static/css/main.04a035a6.css.map",
-    "main.bda8ec6b.js.map": "/P11-kasa-OPC/static/js/main.bda8ec6b.js.map",
-    "132.8d325aa5.chunk.js.map": "/P11-kasa-OPC/static/js/132.8d325aa5.chunk.js.map"
+    "main.3f901a68.css.map": "/P11-kasa-OPC/static/css/main.3f901a68.css.map",
+    "main.dc184568.js.map": "/P11-kasa-OPC/static/js/main.dc184568.js.map",
+    "596.d853399f.chunk.css.map": "/P11-kasa-OPC/static/css/596.d853399f.chunk.css.map",
+    "596.cfd65025.chunk.js.map": "/P11-kasa-OPC/static/js/596.cfd65025.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04a035a6.css",
-    "static/js/main.bda8ec6b.js"
+    "static/css/main.3f901a68.css",
+    "static/js/main.dc184568.js"
   ]
 }
