@@ -4,7 +4,6 @@
   position: relative;
   height: 340px;
   width: 340px;
-  margin: 20px;
 
   img {
     position: relative;
@@ -20,7 +19,7 @@
     position: absolute;
     bottom: 0px;
     left: 0px;
-    border-radius: 10px;
+    border-radius: $border-radius;
     color: var(--white-color);
     background: linear-gradient(
       180deg,

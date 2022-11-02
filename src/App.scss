@@ -21,9 +21,16 @@ html {
 }
 
 body {
-  @include flex(flex-start, center);
   font-family: $font-family;
   font-weight: 400;
   background-color: $body-bg;
   color: $main-color;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  align-items: center;
 }

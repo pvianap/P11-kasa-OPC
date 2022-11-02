@@ -1,0 +1,17 @@
+@use '../../sass/' as *;
+.error {
+  @include flex(flex-start, center);
+  padding: 50px;
+  background-color: $box-bg;
+  max-width: $desktop-width;
+  border-radius: $border-radius;
+  flex-wrap: wrap;
+
+  @include margin-side-desktop;
+  @include tablet {
+    @include margin-side-tablet;
+  }
+  @include mobile {
+    @include margin-side-mobile;
+  }
+}

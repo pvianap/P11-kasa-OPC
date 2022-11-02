@@ -1,11 +1,12 @@
 @use '../../sass/' as *;
 
 .navbar {
+  width: -webkit-fill-available;
   margin-top: $medium-margin;
   max-width: $desktop-width;
+  @include flex(center, space-between);
   @include margin-side-desktop;
 
-  @include flex(center, space-between);
   color: $main-color;
   a {
     text-decoration: none;
@@ -16,7 +17,6 @@
   }
 
   &__logo {
-    @include flex(center, unset);
     font-size: 64px;
     img {
       height: 56x;
@@ -24,9 +24,9 @@
   }
   &__list {
     list-style: none;
-    @include flex(center, flex-end);
+    @include flex(center, space-between);
     li {
-      margin: 5px;
+      margin: 10px;
     }
   }
 
@@ -34,7 +34,6 @@
     @include margin-side-tablet;
     margin-top: $small-margin;
     &__logo {
-      @include flex(center, unset);
       img {
         height: 47px;
       }
@@ -43,7 +42,6 @@
   @include mobile {
     @include margin-side-mobile;
     &__logo {
-      @include flex(center, unset);
       img {
         height: 47px;
       }

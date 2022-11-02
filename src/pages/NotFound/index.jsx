@@ -1,12 +1,19 @@
-import { Fragment } from 'react';
+import { React, Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import './about.scss';
 
-import Navbar from '../../components/Navbar';
-
-export default function NotFound() {
+export default function About() {
   return (
     <Fragment>
-      <Navbar />
-      <p>Not found page</p>
+      <div className="error">
+        <h1 className="error__title">404</h1>
+        <p className="error__msg">
+          Oups! La page que vous demandez n'existe pas.
+        </p>
+        <Link>
+          <p>Retourner sur la page d'accueil</p>
+        </Link>
+      </div>
     </Fragment>
   );
 }
