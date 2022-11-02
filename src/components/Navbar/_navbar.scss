@@ -1,16 +1,52 @@
-.navbar {
-  background-color: beige;
+@use '../../sass/' as *;
 
+.navbar {
+  margin-top: $medium-margin;
+  max-width: $desktop-width;
+  @include margin-side-desktop;
+
+  @include flex(center, space-between);
+  color: $main-color;
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    color: $main-color;
+    text-decoration: underline;
+  }
+
+  &__logo {
+    @include flex(center, unset);
+    font-size: 64px;
+    img {
+      height: 56x;
+    }
+  }
   &__list {
     list-style: none;
-    text-decoration: none;
-    display: flex;
-    align-self: flex-end;
-    a {
-      text-decoration: none;
-    }
+    @include flex(center, flex-end);
     li {
       margin: 5px;
+    }
+  }
+
+  @include tablet {
+    @include margin-side-tablet;
+    margin-top: $small-margin;
+    &__logo {
+      @include flex(center, unset);
+      img {
+        height: 47px;
+      }
+    }
+  }
+  @include mobile {
+    @include margin-side-mobile;
+    &__logo {
+      @include flex(center, unset);
+      img {
+        height: 47px;
+      }
     }
   }
 }

@@ -1,15 +1,16 @@
 // import Router from './utils/Router';
 import { Fragment } from 'react';
-import React, { Suspense } from 'react';
+import React from 'react';
+import Navbar from './components/Navbar';
+import './App.scss';
 
 const Routing = React.lazy(() => import('./utils/Router'));
 
 function App() {
   return (
     <Fragment>
-      <Suspense fallback={<h1>Loading...</h1>}>
-        <Routing />
-      </Suspense>
+      <Navbar />
+      <Routing />
     </Fragment>
   );
 }
