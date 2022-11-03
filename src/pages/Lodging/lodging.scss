@@ -1,1 +1,44 @@
 @use '../../sass/' as *;
+
+.lodging {
+  border: solid blue;
+  width: -webkit-fill-available;
+  margin-bottom: $small-margin;
+  margin-top: $medium-margin;
+  max-width: $desktop-width;
+  @include flex(flex-start, space-between);
+  @include margin-side-desktop;
+  flex-wrap: wrap;
+}
+.sectionOne {
+  width: 60%;
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+  border: solid purple;
+
+  &__title {
+  }
+  &__location {
+  }
+  &__tags {
+    @include flex(flex-start, flex-start);
+  }
+}
+
+.sectionTwo {
+  border: solid lightsalmon;
+  &__title {
+  }
+  &__location {
+  }
+  &__tags {
+  }
+}
+
+.profile {
+  @include flex(flex-start, center);
+  border: solid lightblue;
+  &__hostName {
+    overflow: wrap;
+  }
+}
