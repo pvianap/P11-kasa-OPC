@@ -1,0 +1,57 @@
+@use '../../sass/' as *;
+.carousel {
+  width: -webkit-fill-available;
+  margin-bottom: $small-margin;
+  max-width: $desktop-width;
+  position: relative;
+  height: 415px;
+  @include flex(center, space-between);
+  @include margin-side-desktop;
+  &__arrowLeft {
+    position: absolute;
+
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  &__arrowRight {
+    position: absolute;
+
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  &__image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+  &__slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+    &--active {
+      width: 100%;
+      height: 100%;
+
+      opacity: 1;
+      transition-duration: 1s;
+      transform: scale(1.08);
+    }
+  }
+  @include tablet {
+    @include margin-side-tablet;
+    margin-top: $small-margin;
+  }
+  @include mobile {
+    @include margin-side-mobile;
+  }
+}

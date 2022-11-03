@@ -2,6 +2,7 @@
 
 .navbar {
   width: -webkit-fill-available;
+  margin-bottom: $small-margin;
   margin-top: $medium-margin;
   max-width: $desktop-width;
   @include flex(center, space-between);
