@@ -5,6 +5,7 @@
   margin-bottom: $small-margin;
   margin-top: $medium-margin;
   max-width: $desktop-width;
+
   @include flex(center, space-between);
   @include margin-side-desktop;
 
@@ -19,9 +20,7 @@
 
   &__logo {
     font-size: 64px;
-    img {
-      height: 56x;
-    }
+    height: 56x;
   }
   &__list {
     list-style: none;

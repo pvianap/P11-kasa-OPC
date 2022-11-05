@@ -1,0 +1,61 @@
+@use '../../sass/' as *;
+
+.dropdown {
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+
+  width: 582px;
+  margin-bottom: 15px;
+
+  &__bar {
+    border-radius: $border-radius;
+    width: 100%;
+    height: 52px;
+    background-color: $main-color;
+    @include flex(center, space-between);
+    padding: 13px 20px;
+    flex-direction: row;
+
+    &__title {
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &__img {
+      width: 26px;
+
+      &--closed {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  &__container {
+    z-index: -10;
+    opacity: 1;
+    background-color: $box-bg;
+    border-radius: $border-radius;
+    min-width: 335px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -5px;
+    min-height: 220px;
+    transition-duration: 1s ease;
+    width: 100%;
+    &--closed {
+      opacity: 0;
+      z-index: -10;
+      position: fixed;
+      transition-duration: 1s ease;
+    }
+  }
+  p {
+    overflow-wrap: normal;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2px 20px;
+  }
+}
+
+.bigger {
+  width: 1023px;
+}

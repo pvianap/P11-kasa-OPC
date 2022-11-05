@@ -1,7 +1,7 @@
 @use '../../sass/' as *;
 .carousel {
   width: -webkit-fill-available;
-  margin-bottom: $small-margin;
+
   max-width: $desktop-width;
   position: relative;
   height: 415px;

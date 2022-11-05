@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/logo.svg';
+
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 import './_navbar.scss';
 
 export default function Navbar() {
@@ -8,7 +9,7 @@ export default function Navbar() {
     <Fragment>
       <nav className="navbar">
         <Link to="/" className="navbar__logo">
-          <img src={Logo} alt="" />
+          <Logo className="navbar__logo" />
         </Link>
         <ul className="navbar__list">
           <li>

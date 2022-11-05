@@ -1,18 +1,17 @@
 import { Fragment } from 'react';
+import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import data from '../../data/logements.json';
+import imgBanner from '../../assets/banner.png';
 import './home.scss';
-import Banner from '../../assets/banner.png';
 
 console.log(data[0]);
 export default function Home() {
+  console.log('THIS TYPE');
+  console.log(typeof data);
   return (
     <Fragment>
-      <div className="banner">
-        <img src={Banner} alt="banner" />
-        <div className="banner__filter"></div>
-        <p className="banner__text">Chez vous, partout et ailleurs</p>
-      </div>
+      <Banner img={imgBanner} text="Chez vous, partout et ailleurs" />
       <div className="container">
         {data.map((e) => {
           return <Card key={e.id} data={e}></Card>;

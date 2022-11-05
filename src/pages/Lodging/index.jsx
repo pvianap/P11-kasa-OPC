@@ -2,6 +2,7 @@ import { React, Fragment } from 'react';
 import Carousel from '../../components/Carousel';
 import Tag from '../../components/Tag';
 import Rating from '../../components/Rating';
+import Dropdown from '../../components/Dropdown';
 import { useLocation } from 'react-router-dom';
 import './lodging.scss';
 export default function Lodging() {
@@ -30,7 +31,14 @@ export default function Lodging() {
           </div>
           <Rating data={data.rating} />
         </section>
-        <section className="dropdown"></section>
+        <section className="sectionDropdown">
+          <Dropdown
+            data={{ text: data.description, type: 'Description', isBig: false }}
+          />
+          <Dropdown
+            data={{ text: data.equipments, type: 'Équipments', isBig: false }}
+          />
+        </section>
       </main>
     </Fragment>
   );

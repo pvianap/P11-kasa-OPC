@@ -1,15 +1,16 @@
 @use '../../sass/' as *;
 
 .footer {
-  display: flex;
+  @include flex(center, center);
   flex-direction: column;
-  justify-content: center;
   height: 210px;
   text-align: center;
   width: 100%;
   background-color: black;
   color: white;
-
+  position: floor($number: 0);
+  bottom: 0;
+  position: absolute;
   &__logo {
     height: 40px;
     margin-bottom: 28px;

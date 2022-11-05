@@ -10,6 +10,7 @@
 
 html {
   font-size: $desktop-text-size;
+  min-width: 375px;
 
   @include tablet {
     // A TESTER !!!!!!!!!!
@@ -30,7 +31,10 @@ body {
 #root {
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   width: 100%;
   align-items: center;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 210px;
 }

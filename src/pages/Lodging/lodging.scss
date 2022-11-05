@@ -1,44 +1,91 @@
 @use '../../sass/' as *;
 
 .lodging {
-  border: solid blue;
   width: -webkit-fill-available;
   margin-bottom: $small-margin;
-  margin-top: $medium-margin;
+  margin-top: 25px;
   max-width: $desktop-width;
   @include flex(flex-start, space-between);
   @include margin-side-desktop;
   flex-wrap: wrap;
-}
-.sectionOne {
-  width: 60%;
-  @include flex(flex-start, flex-start);
-  flex-direction: column;
-  border: solid purple;
-
-  &__title {
+  @include tablet {
+    @include margin-side-tablet;
   }
-  &__location {
+  @include mobile {
+    @include margin-side-mobile;
+    margin-top: 15px;
   }
-  &__tags {
+  .sectionOne {
+    max-width: 65%;
     @include flex(flex-start, flex-start);
-  }
-}
+    flex-direction: column;
 
-.sectionTwo {
-  border: solid lightsalmon;
-  &__title {
-  }
-  &__location {
-  }
-  &__tags {
-  }
-}
+    font-weight: 500;
+    @include mobile {
+      max-width: 100%;
+    }
+    &__title {
+      font-size: 36px;
+      font-weight: 500;
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+    &__location {
+      font-size: 18px;
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+    &__tags {
+      margin-top: $small-margin;
+      @include flex(flex-start, flex-start);
 
-.profile {
-  @include flex(flex-start, center);
-  border: solid lightblue;
-  &__hostName {
-    overflow: wrap;
+      flex-wrap: wrap;
+    }
+  }
+
+  .sectionTwo {
+    @include flex(flex-end, center);
+    flex-direction: column;
+
+    min-width: 165px;
+
+    @include mobile {
+      max-width: none;
+      width: 100%;
+      flex-direction: row-reverse;
+      @include flex(center, space-between);
+    }
+    .profile {
+      @include flex(flex-start, flex-end);
+
+      width: 120px;
+      margin-bottom: $small-margin;
+      @include mobile {
+        width: 120px;
+        margin-bottom: 0;
+      }
+
+      &__hostName {
+        text-align: right;
+        margin-right: 10px;
+        font-size: 18px;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      &__hostPhoto {
+        border-radius: 100%;
+        width: 64px;
+      }
+    }
+  }
+  .sectionDropdown {
+    @include flex(flex-start, space-between);
+
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
