@@ -1,1 +1,14 @@
 @use '../../sass/' as *;
+
+.dropdownSection {
+  flex-wrap: wrap;
+  @include flex(flex-start, center);
+  @include maxWidth;
+  @include margin-side-desktop;
+  @include tablet {
+    @include margin-side-tablet;
+  }
+  @include mobile {
+    @include margin-side-mobile;
+  }
+}

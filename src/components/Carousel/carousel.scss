@@ -1,31 +1,32 @@
 @use '../../sass/' as *;
 .carousel {
-  width: -webkit-fill-available;
-
-  max-width: $desktop-width;
+  @include flex(center, space-between);
+  @include maxWidth;
   position: relative;
   height: 415px;
-  @include flex(center, space-between);
-  @include margin-side-desktop;
   &__arrowLeft {
     position: absolute;
-
     left: 32px;
     font-size: 3rem;
     color: #000;
     z-index: 10;
     cursor: pointer;
     user-select: none;
+    @include mobile {
+      height: 40px;
+    }
   }
   &__arrowRight {
     position: absolute;
-
     right: 32px;
     font-size: 3rem;
     color: #000;
     z-index: 10;
     cursor: pointer;
     user-select: none;
+    @include mobile {
+      height: 40px;
+    }
   }
   &__image {
     position: relative;
@@ -53,5 +54,6 @@
   }
   @include mobile {
     @include margin-side-mobile;
+    max-height: 225px;
   }
 }

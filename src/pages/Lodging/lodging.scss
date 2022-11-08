@@ -1,20 +1,19 @@
 @use '../../sass/' as *;
 
 .lodging {
-  width: -webkit-fill-available;
+  @include maxWidth;
+  @include flex(flex-start, space-between);
   margin-bottom: $small-margin;
   margin-top: 25px;
-  max-width: $desktop-width;
-  @include flex(flex-start, space-between);
-  @include margin-side-desktop;
   flex-wrap: wrap;
+  @include margin-side-desktop;
   @include tablet {
     @include margin-side-tablet;
   }
   @include mobile {
     @include margin-side-mobile;
-    margin-top: 15px;
   }
+
   .sectionOne {
     max-width: 65%;
     @include flex(flex-start, flex-start);
@@ -84,8 +83,17 @@
   }
   .sectionDropdown {
     @include flex(flex-start, space-between);
-
     flex-wrap: wrap;
     width: 100%;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

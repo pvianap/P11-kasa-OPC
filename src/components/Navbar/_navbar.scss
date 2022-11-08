@@ -5,11 +5,26 @@
   margin-bottom: $small-margin;
   margin-top: $medium-margin;
   max-width: $desktop-width;
-
+  color: $main-color;
   @include flex(center, space-between);
   @include margin-side-desktop;
-
-  color: $main-color;
+  @include tablet {
+    @include margin-side-tablet;
+    margin-top: $small-margin;
+    &__logo {
+      img {
+        height: 47px;
+      }
+    }
+  }
+  @include mobile {
+    @include margin-side-mobile;
+    &__logo {
+      img {
+        height: 47px;
+      }
+    }
+  }
   a {
     text-decoration: none;
   }
@@ -27,24 +42,6 @@
     @include flex(center, space-between);
     li {
       margin: 10px;
-    }
-  }
-
-  @include tablet {
-    @include margin-side-tablet;
-    margin-top: $small-margin;
-    &__logo {
-      img {
-        height: 47px;
-      }
-    }
-  }
-  @include mobile {
-    @include margin-side-mobile;
-    &__logo {
-      img {
-        height: 47px;
-      }
     }
   }
 }

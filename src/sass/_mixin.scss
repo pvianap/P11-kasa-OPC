@@ -19,3 +19,8 @@
   margin-left: $margin;
   margin-right: $margin;
 }
+
+@mixin maxWidth {
+  width: -webkit-fill-available;
+  max-width: $desktop-width;
+}

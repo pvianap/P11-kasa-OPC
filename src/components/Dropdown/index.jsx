@@ -21,11 +21,12 @@ export default function Dropdown({ data }) {
   };
 
   const size = (isBig) => {
-    return isBig ? 'bigger' : '';
+    return isBig ? ' bigger' : '';
   };
+  console.log(size(data.isBig));
 
   return (
-    <div className={{ styleClass } + size(data.isBig)}>
+    <div className={`${styleClass} ${size(data.isBig)}`}>
       <div className="dropdown__bar" onClick={close}>
         <h2 className="dropdown__bar__title">{title}</h2>
         <img
@@ -34,7 +35,7 @@ export default function Dropdown({ data }) {
           className={'dropdown__bar__img ' + isClosed('arrow')}
         />
       </div>
-      <div className={`${isClosed('container')} ` + 'dropdown__container'}>
+      <div className={`dropdown__container ${isClosed('container')} `}>
         {textArray.map((e) => (
           <p>{e}</p>
         ))}

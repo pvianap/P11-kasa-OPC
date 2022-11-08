@@ -3,10 +3,15 @@
 .dropdown {
   @include flex(flex-start, flex-start);
   flex-direction: column;
-
   width: 582px;
-  margin-bottom: 15px;
+  margin: 10px 0;
 
+  @include tablet {
+    width: 100%;
+  }
+  @include mobile {
+    width: 335px;
+  }
   &__bar {
     border-radius: $border-radius;
     width: 100%;
@@ -41,6 +46,7 @@
     min-height: 220px;
     transition-duration: 1s ease;
     width: 100%;
+
     &--closed {
       opacity: 0;
       z-index: -10;
@@ -57,5 +63,12 @@
 }
 
 .bigger {
-  width: 1023px;
+  width: 100%;
+  @include margin-side-desktop;
+  @include tablet {
+    @include margin-side-tablet;
+  }
+  @include mobile {
+    @include margin-side-mobile;
+  }
 }
