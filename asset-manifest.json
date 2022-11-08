@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/P11-kasa-OPC/static/css/main.57160e97.css",
-    "main.js": "/P11-kasa-OPC/static/js/main.62436854.js",
-    "static/css/378.1beef890.chunk.css": "/P11-kasa-OPC/static/css/378.1beef890.chunk.css",
-    "static/js/378.339dc754.chunk.js": "/P11-kasa-OPC/static/js/378.339dc754.chunk.js",
+    "main.css": "/P11-kasa-OPC/static/css/main.af1bde00.css",
+    "main.js": "/P11-kasa-OPC/static/js/main.31aac5f9.js",
+    "static/css/931.509c44d9.chunk.css": "/P11-kasa-OPC/static/css/931.509c44d9.chunk.css",
+    "static/js/931.6e85b694.chunk.js": "/P11-kasa-OPC/static/js/931.6e85b694.chunk.js",
+    "static/media/banner_about.png": "/P11-kasa-OPC/static/media/banner_about.fce6fc3e9ed27433e9b0.png",
     "static/media/banner.png": "/P11-kasa-OPC/static/media/banner.efc1935eb81fc5e585f9.png",
-    "static/media/logo.svg": "/P11-kasa-OPC/static/media/logo.dd01a5a00ddaccb60e7df3aab31170dc.svg",
+    "static/media/logo.svg": "/P11-kasa-OPC/static/media/logo.0a14b5e472b7cd95964381026f68a6dc.svg",
     "index.html": "/P11-kasa-OPC/index.html",
-    "main.57160e97.css.map": "/P11-kasa-OPC/static/css/main.57160e97.css.map",
-    "main.62436854.js.map": "/P11-kasa-OPC/static/js/main.62436854.js.map",
-    "378.1beef890.chunk.css.map": "/P11-kasa-OPC/static/css/378.1beef890.chunk.css.map",
-    "378.339dc754.chunk.js.map": "/P11-kasa-OPC/static/js/378.339dc754.chunk.js.map"
+    "static/media/arrow_right.svg": "/P11-kasa-OPC/static/media/arrow_right.fcd8131c4741f9116bc0ec56cc449b13.svg",
+    "static/media/arrow_up.svg": "/P11-kasa-OPC/static/media/arrow_up.b493ffa8d213273ee575457aae023b70.svg",
+    "static/media/arrow_left.svg": "/P11-kasa-OPC/static/media/arrow_left.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "static/media/star_blank.svg": "/P11-kasa-OPC/static/media/star_blank.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/star_solid.svg": "/P11-kasa-OPC/static/media/star_solid.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.af1bde00.css.map": "/P11-kasa-OPC/static/css/main.af1bde00.css.map",
+    "main.31aac5f9.js.map": "/P11-kasa-OPC/static/js/main.31aac5f9.js.map",
+    "931.509c44d9.chunk.css.map": "/P11-kasa-OPC/static/css/931.509c44d9.chunk.css.map",
+    "931.6e85b694.chunk.js.map": "/P11-kasa-OPC/static/js/931.6e85b694.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57160e97.css",
-    "static/js/main.62436854.js"
+    "static/css/main.af1bde00.css",
+    "static/js/main.31aac5f9.js"
   ]
 }
