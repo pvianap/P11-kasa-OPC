@@ -24,13 +24,17 @@ export default function Home() {
           data={{ text: texts.fiabilite, type: 'Fiabilité', isBig: true }}
         />
         <Dropdown
-          data={{ text: texts.fiabilite, type: 'Respect', isBig: true }}
+          data={{ text: texts.respect, type: 'Respect', isBig: true }}
         />
         <Dropdown
-          data={{ text: texts.fiabilite, type: 'Service', isBig: true }}
+          data={{ text: texts.service, type: 'Service', isBig: true }}
         />
         <Dropdown
-          data={{ text: texts.fiabilite, type: 'Responsabilité', isBig: true }}
+          data={{
+            text: texts.responsabilite,
+            type: 'Responsabilité',
+            isBig: true,
+          }}
         />
       </section>
     </Fragment>

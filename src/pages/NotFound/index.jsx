@@ -10,7 +10,7 @@ export default function About() {
         <p className="error__msg">
           Oups! La page que vous demandez n'existe pas.
         </p>
-        <Link>
+        <Link to="/">
           <p>Retourner sur la page d'accueil</p>
         </Link>
       </div>

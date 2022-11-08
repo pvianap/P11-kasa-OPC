@@ -2,6 +2,7 @@
 .carousel {
   @include flex(center, space-between);
   @include maxWidth;
+  @include margin-side-desktop;
   position: relative;
   height: 415px;
   &__counter {
