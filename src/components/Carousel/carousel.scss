@@ -4,6 +4,19 @@
   @include maxWidth;
   position: relative;
   height: 415px;
+  &__counter {
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    @include mobile {
+      display: none;
+    }
+  }
   &__arrowLeft {
     position: absolute;
     left: 32px;

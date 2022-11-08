@@ -22,6 +22,7 @@ export default function Carousel({ data }) {
 
   return (
     <section className="carousel">
+      <div className="carousel__counter">{`${current + 1}/${length}`}</div>
       <img
         src={arrowLeft}
         className="carousel__arrowLeft"
@@ -34,7 +35,6 @@ export default function Carousel({ data }) {
         alt="flèche droite"
         onClick={nextSlide}
       />
-
       {slides.map((slide, index) => {
         return (
           <div
