@@ -15,7 +15,7 @@ export default function Lodging() {
           <h1 className="sectionOne__title">{data.title}</h1>
           <p className="sectionOne__location">{data.location}</p>
           <div className="sectionOne__tags">
-            {data.tags.map((e) => {
+            {data.tags.map((e, index) => {
               return <Tag key={e.index} data={e} />;
             })}
           </div>

@@ -4,5 +4,4 @@ import { useState } from 'react';
 export default function Cache() {
   const [data, setData] = useState();
   setData(lodgings);
-  console.log(data);
 }

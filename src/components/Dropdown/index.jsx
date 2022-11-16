@@ -23,7 +23,6 @@ export default function Dropdown({ data }) {
   const size = (isBig) => {
     return isBig ? ' bigger' : '';
   };
-  console.log(size(data.isBig));
 
   return (
     <div className={`${styleClass} ${size(data.isBig)}`}>

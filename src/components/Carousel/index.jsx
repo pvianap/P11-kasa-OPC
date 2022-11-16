@@ -44,7 +44,12 @@ export default function Carousel({ data }) {
             key={index}
           >
             {index === current && (
-              <img src={slide} className="carousel__image" alt="slide" />
+              <img
+                src={slide}
+                className="carousel__image"
+                alt="slide"
+                key={slide.index}
+              />
             )}
           </div>
         );
